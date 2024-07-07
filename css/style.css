@@ -757,6 +757,19 @@ main .container .favorite .box p {
         left: 200px;
         top: 400px;
     }
+
+    .new-wrapper {
+        scroll-snap-type: x mandatory;
+    }
+    .new-wrapper .box {
+        scroll-snap-align: start;
+    }
+    .new-wrapper::-webkit-scrollbar {
+        background: transparent;
+    }
+    .new-wrapper::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
 }
 
 @media screen and (max-width: 378px) {
@@ -797,18 +810,7 @@ main .container .favorite .box p {
         font-size: 12px;
     }
 
-    .new-wrapper {
-        scroll-snap-type: x mandatory;
-    }
-    .new-wrapper .box {
-        scroll-snap-align: start;
-    }
-    .new-wrapper::-webkit-scrollbar {
-        background: transparent;
-    }
-    .new-wrapper::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
+    
     main .container .about .box P {
         padding-right: 0;
     }
